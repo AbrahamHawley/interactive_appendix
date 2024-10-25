@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appendix: Figures, Tables, and Graphs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        select {
+            margin: 20px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .note {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Appendix: Figures, Tables, and Graphs</h1>
+
+<p>Select a figure, table, or graph from the dropdown menu to view:</p>
+
+<select id="menu">
+    <option value="none">-- Select --</option>
+    <option value="figure1">Figure 1: Additive Indices</option>
+    <option value="table1">Table 1: Mean Values of Clusters</option>
+    <option value="graph1">Graph 1: MDS Plot with Clusters</option>
+    <option value="graph2">Graph 2: MDS Plot by Presence of Religious Affairs Offices</option>
+    <option value="graph3">Graph 3: MDS Plot by Region</option>
+    <option value="graph4">Graph 4: MDS Plot by Indigenous Language</option>
+    <option value="graph5">Graph 5: MDS Plot by Indigenous Population</option>
+    <option value="graph6">Graph 6: MDS Plot by Non-Catholic Population</option>
+    <option value="graph7">Graph 7: MDS Plot by Catholic Population</option>
+    <option value="graph8">Graph 8: MDS Plot by Non-Christian Minorities</option>
+</select>
+
+<div id="figure1" class="content">
+    <h2>Figure 1: Additive Indices</h2>
+    <img src="diagram1.png" alt="Additive Indices">
+    <p class="note">Note: Note. By applying content analysis to laws and government documents from religious affairs offices across all states, I created a dataset that tracks the specific activities of each office through dichotomous variables. This figure presents four additive indices derived from these variables. The first index reflects their role in handling service requests and representing the government to religious associations. The second tracks the legal registration of religious organizations. The third highlights peacebuilding efforts and the resolution of religious conflicts, while the fourth measures activities related to promoting secularism and monitoring religious organizations. All indices show a scale reliability coefficient (SRC) greater than 0.7, confirming their validity.</p>
+</div>
+
+<div id="table1" class="content">
+    <h2>Table 1: Mean Values of Clusters</h2>
+    <img src="table1.png" alt="Mean Values of Clusters">
+    <p class="note">Note. Based on the previously shown indices, I divided the observations in the dataset using cluster analysis. This classification groups the religious affairs offices across the country according to the activities they perform. This table presents the mean values of each cluster for the four indices. The table uses a heat scale where values shaded in red indicate the lowest values for each index, while those shaded in green represent the highest values." Cluster 1 shows low involvement across all indices, with the lowest values in Liaison & Service Facilitation activities. Cluster 2 has high values in Liaison & Service Facilitation, and Normativity & Regulation but lower involvement in Peacebuilding and Secular Supervision. Cluster 3 is highly active in all areas, with the exception of secular supervision. Cluster 4 shows limited participation in all indices, with slightly higher values in Liaison & Services. Cluster 5 is very active in Liaison & Services but has minimal participation in Secular Supervision. Finally, Cluster 6 stands out with the highest values in almost all indices, especially in Peacebuilding and Secular Supervision.</p>
+</div>
+
+<div id="graph1" class="content">
+    <h2>Graph 1: MDS Plot with Clusters</h2>
+    <img src="graph1.png" alt="MDS Plot with Clusters">
+    <p class="note">Note. This graph presents an MDS (Multidimensional Scaling) analysis based on four indices that reflect the main activities of religious affairs offices: liaison, legal registration, peacebuilding projects, and control/secularism. Each axis of the graph represents a dimension derived from the analysis, and the position of the observations reflects the relationship between the offices' activities and these dimensions. Dimension 1 (horizontal axis) is strongly related to legal registration activities (negative correlation of -0.8717) and, to a lesser extent, to peacebuilding projects (-0.8025). Observations on the negative side of this axis tend to be more focused on these activities, with the correlations indicating that greater involvement in these functions is associated with movement toward the negative end of the horizontal axis. Dimension 2 (vertical axis) is more strongly associated with liaison activities (negative correlation of -0.8128) and, on the opposite end, with secular supervision activities (positive correlation of 0.6224). Observations moving toward the positive side of the vertical axis reflect a greater focus on supervising religious organizations, while those on the negative side tend to be more involved in liaison and service facilitation. In general, observations grouped in the negative quadrant of Dimension 1 and the positive quadrant of Dimension 2 likely represent offices involved in peacebuilding and regulatory activities. In contrast, observations in the positive quadrant of Dimension 1 and the negative quadrant of Dimension 2 correspond to offices primarily focused on liaison tasks. Lastly, offices with low values across all indices tend to cluster in the positive quadrant of Dimension 1 and around the positive and central quadrants of Dimension 2, indicating lower overall participation in all analyzed activities. The colors of the observations reflect the classes generated by the cluster analysis, and their labels, the abbreviations of their state names.</p>
+</div>
+
+<div id="graph2" class="content">
+    <h2>Graph 2: MDS Plot by Presence of Religious Affairs Offices</h2>
+    <img src="graph2.png" alt="MDS Plot by Presence of Religious Affairs Offices">
+    <p class="note">These remaining graphs help explore variables that could explain the differences in activities carried out by the religious affairs offices in each state. Southern and southeastern states, with a higher presence of Indigenous and non-Catholic Christian populations, tend to show greater interest in establishing religious affairs offices and are more involved in peacebuilding and legal registration activities. In contrast, states with a higher Catholic population (Bajío region) show less interest in these offices, focusing more on liaison activities with religious leaders and, occasionally, on legal registration. A tentative explanation for the relationship between religious affairs offices, peacebuilding, and the percentages of Indigenous and non-Catholic Christian populations involves religious intolerance conflicts in communities governed by traditional customs. These communities often tie community membership to participation in Indigenous-Catholic rituals, and conversion to Protestantism has led to expulsions and even lynching of converts. Additionally, the Catholic Church doesn’t rely on religious affairs offices for government dialogue, while non-Catholic Christian churches use these offices as their main channel of communication with the government.</p>
+</div>
+
+<div id="graph3" class="content">
+    <h2>Graph 3: MDS Plot by Region</h2>
+    <img src="graph3.png" alt="MDS Plot by Region">
+    <p class="note">These remaining graphs help explore variables that could explain the differences in activities carried out by the religious affairs offices in each state. Southern and southeastern states, with a higher presence of Indigenous and non-Catholic Christian populations, tend to show greater interest in establishing religious affairs offices and are more involved in peacebuilding and legal registration activities. In contrast, states with a higher Catholic population (Bajío region) show less interest in these offices, focusing more on liaison activities with religious leaders and, occasionally, on legal registration. A tentative explanation for the relationship between religious affairs offices, peacebuilding, and the percentages of Indigenous and non-Catholic Christian populations involves religious intolerance conflicts in communities governed by traditional customs. These communities often tie community membership to participation in Indigenous-Catholic rituals, and conversion to Protestantism has led to expulsions and even lynching of converts. Additionally, the Catholic Church doesn’t rely on religious affairs offices for government dialogue, while non-Catholic Christian churches use these offices as their main channel of communication with the government.</p>
+</div>
+
+<div id="graph4" class="content">
+    <h2>Graph 4: MDS Plot by Indigenous Language</h2>
+    <img src="graph4.png" alt="MDS Plot by Indigenous Language">
+    <p class="note">These remaining graphs help explore variables that could explain the differences in activities carried out by the religious affairs offices in each state. Southern and southeastern states, with a higher presence of Indigenous and non-Catholic Christian populations, tend to show greater interest in establishing religious affairs offices and are more involved in peacebuilding and legal registration activities. In contrast, states with a higher Catholic population (Bajío region) show less interest in these offices, focusing more on liaison activities with religious leaders and, occasionally, on legal registration. A tentative explanation for the relationship between religious affairs offices, peacebuilding, and the percentages of Indigenous and non-Catholic Christian populations involves religious intolerance conflicts in communities governed by traditional customs. These communities often tie community membership to participation in Indigenous-Catholic rituals, and conversion to Protestantism has led to expulsions and even lynching of converts. Additionally, the Catholic Church doesn’t rely on religious affairs offices for government dialogue, while non-Catholic Christian churches use these offices as their main channel of communication with the government.</p>
+</div>
+
+<div id="graph5" class="content">
+    <h2>Graph 5: MDS Plot by Indigenous Population</h2>
+    <img src="graph2.png" alt="MDS Plot by Indigenous Population">
+    <p class="note">These remaining graphs help explore variables that could explain the differences in activities carried out by the religious affairs offices in each state. Southern and southeastern states, with a higher presence of Indigenous and non-Catholic Christian populations, tend to show greater interest in establishing religious affairs offices and are more involved in peacebuilding and legal registration activities. In contrast, states with a higher Catholic population (Bajío region) show less interest in these offices, focusing more on liaison activities with religious leaders and, occasionally, on legal registration. A tentative explanation for the relationship between religious affairs offices, peacebuilding, and the percentages of Indigenous and non-Catholic Christian populations involves religious intolerance conflicts in communities governed by traditional customs. These communities often tie community membership to participation in Indigenous-Catholic rituals, and conversion to Protestantism has led to expulsions and even lynching of converts. Additionally, the Catholic Church doesn’t rely on religious affairs offices for government dialogue, while non-Catholic Christian churches use these offices as their main channel of communication with the government.</p>
+</div>
+
+<div id="graph6" class="content">
+    <h2>Graph 6: MDS Plot by Non-Catholic Population</h2>
+    <img src="graph6.png" alt="MDS Plot by Non-Catholic Population">
+    <p class="note">These remaining graphs help explore variables that could explain the differences in activities carried out by the religious affairs offices in each state. Southern and southeastern states, with a higher presence of Indigenous and non-Catholic Christian populations, tend to show greater interest in establishing religious affairs offices and are more involved in peacebuilding and legal registration activities. In contrast, states with a higher Catholic population (Bajío region) show less interest in these offices, focusing more on liaison activities with religious leaders and, occasionally, on legal registration. A tentative explanation for the relationship between religious affairs offices, peacebuilding, and the percentages of Indigenous and non-Catholic Christian populations involves religious intolerance conflicts in communities governed by traditional customs. These communities often tie community membership to participation in Indigenous-Catholic rituals, and conversion to Protestantism has led to expulsions and even lynching of converts. Additionally, the Catholic Church doesn’t rely on religious affairs offices for government dialogue, while non-Catholic Christian churches use these offices as their main channel of communication with the government.</p>
+</div>
+
+<div id="graph7" class="content">
+    <h2>Graph 7: MDS Plot by Catholic Population</h2>
+    <img src="graph7.png" alt="MDS Plot by Catholic Population">
+    <p class="note">These remaining graphs help explore variables that could explain the differences in activities carried out by the religious affairs offices in each state. Southern and southeastern states, with a higher presence of Indigenous and non-Catholic Christian populations, tend to show greater interest in establishing religious affairs offices and are more involved in peacebuilding and legal registration activities. In contrast, states with a higher Catholic population (Bajío region) show less interest in these offices, focusing more on liaison activities with religious leaders and, occasionally, on legal registration. A tentative explanation for the relationship between religious affairs offices, peacebuilding, and the percentages of Indigenous and non-Catholic Christian populations involves religious intolerance conflicts in communities governed by traditional customs. These communities often tie community membership to participation in Indigenous-Catholic rituals, and conversion to Protestantism has led to expulsions and even lynching of converts. Additionally, the Catholic Church doesn’t rely on religious affairs offices for government dialogue, while non-Catholic Christian churches use these offices as their main channel of communication with the government.</p>
+</div>
+
+<div id="graph8" class="content">
+    <h2>Graph 8: MDS Plot by Non-Christian Minorities</h2>
+    <img src="graph8.png" alt="MDS Plot by Non-Christian Minorities">
+    <p class="note">These remaining graphs help explore variables that could explain the differences in activities carried out by the religious affairs offices in each state. Southern and southeastern states, with a higher presence of Indigenous and non-Catholic Christian populations, tend to show greater interest in establishing religious affairs offices and are more involved in peacebuilding and legal registration activities. In contrast, states with a higher Catholic population (Bajío region) show less interest in these offices, focusing more on liaison activities with religious leaders and, occasionally, on legal registration. A tentative explanation for the relationship between religious affairs offices, peacebuilding, and the percentages of Indigenous and non-Catholic Christian populations involves religious intolerance conflicts in communities governed by traditional customs. These communities often tie community membership to participation in Indigenous-Catholic rituals, and conversion to Protestantism has led to expulsions and even lynching of converts. Additionally, the Catholic Church doesn’t rely on religious affairs offices for government dialogue, while non-Catholic Christian churches use these offices as their main channel of communication with the government.</p>
+</div>
+<script>
+    const menu = document.getElementById('menu');
+    const contents = document.querySelectorAll('.content');
+
+    menu.addEventListener('change', function() {
+        contents.forEach(content => content.classList.remove('active'));
+        const selected = document.getElementById(this.value);
+        if (selected) selected.classList.add('active');
+    });
+</script>
+
+</body>
+</html>
